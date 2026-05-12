@@ -864,5 +864,5 @@ Code Splitting  → Lazy reducers (big apps)   store.injectReducer()
 
 ---
 
-*Documentation by: Tu khud — Redux Toolkit Seekhte Seekhte* 😄
+*Documentation by: *Abdul Mateen* — Redux Toolkit Seekhte Seekhte* 😄
 *Reference: Redux Toolkit Official Docs — redux-toolkit.js.org*
