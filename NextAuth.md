@@ -12,6 +12,7 @@ This document shows a production-style Auth.js setup in **JavaScript** for Next.
 - route protection
 - server-side auth usage
 - session usage in client components
+- for-updating-any-field
 
 ---
 
