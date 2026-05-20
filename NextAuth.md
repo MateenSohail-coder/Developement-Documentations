@@ -451,7 +451,33 @@ AUTH_GOOGLE_ID=your-google-client-id
 AUTH_GOOGLE_SECRET=your-google-client-secret
 NEXTAUTH_URL=http://localhost:3000
 ```
+# For Updating any field
+```js
+const {update}=useSession( );
+```
+```js
+await update({isVerified:Boolean(true)})
+```
 
+```js
+ async jwt({ token, user, trigger, session }) {
+      if (user) {
+        token.id = user.id;
+        token.name = user.name;
+        token.email = user.email;
+        token.image = user.image;
+        token.role = user.role;
+        token.isVerified = Boolean(user.isVerified);
+        token.isBlocked = Boolean(user.isBlocked);
+      }
+      if (trigger === "update" && session) {
+        token.isVerified = Boolean(session.isVerified);
+        token.isBlocked = Boolean(session.isBoolean);
+        return token;
+      }
+      return token;
+    },
+```
 ---
 
 ## Common production notes
